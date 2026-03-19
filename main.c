@@ -7,7 +7,17 @@
 #include <msp430.h>
 //#include "transceiver.h"
 #include "clocks.h"
+
+extern int IncrementVcore(void);
+
+//global variables
+int i;
+
 void main(void) {
+//Setting core voltage to 2
+    for (i = 1; i <= 2; i++) {
+   IncrementVcore();
+   }
 setupClocks(); 
 //setupTransceiver();
 }
