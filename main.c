@@ -5,8 +5,11 @@
 
 
 #include <msp430.h>
-void main(void) { 
-
+//#include "transceiver.h"
+#include "clocks.h"
+void main(void) {
+setupClocks(); 
+//setupTransceiver();
 }
 
 
