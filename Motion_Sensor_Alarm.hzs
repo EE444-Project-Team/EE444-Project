@@ -1,7 +1,7 @@
 <!DOCTYPE CrossStudio_Session_File>
 <session>
  <Bookmarks/>
- <Breakpoints groups="" active_group="Breakpoints"/>
+ <Breakpoints groups="Breakpoints" active_group="Breakpoints"/>
  <EEMRegistersWindow>
   <EEMRegisters generalClockControl="2e" moduleClockControl="40f"/>
  </EEMRegistersWindow>
@@ -81,7 +81,14 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="228" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="main.c" selected="1" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="15" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="main.c" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="37" y="1" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="transceiver.h" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="1" y="4" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="transceiver.c" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="22" y="0" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="clocks.h" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="3" y="0" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="clocks.c" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="24" y="357" useTextEdit="1" openedFrom="D:/Users/jlmeyers3/Documents/EE444 Labs/Project/EE444-Project/main.c" useBinaryEdit="0" left="0" path="../../../../AppData/Local/Rowley Associates Limited/CrossWorks for MSP430/v3/packages/include/msp430.h" selected="0" top="341" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="4" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../Lab 6/Lab 6.c" selected="1" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="8" y="4294" useTextEdit="1" openedFrom="D:/Users/jlmeyers3/Documents/EE444 Labs/Lab 6/Lab 6.c" useBinaryEdit="0" left="0" path="../../../../AppData/Local/Rowley Associates Limited/CrossWorks for MSP430/v3/packages/include/msp430f5438a.h" selected="0" top="4273" codecName="Default"/>
  </Files>
- <MSP430CrossStudioWindow activeProject="Motion_Sensor_Alarm" fileDialogDefaultFilter="*.c" autoConnectTarget="MSP-FET/MSP-FET430UIF/eZ-FET" buildConfiguration="MSP430 Debug" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="D:/Users/jlmeyers3/Documents/EE444 Labs/Lab 5" debugSearchPath="" autoConnectCapabilities="528255"/>
+ <MSP430CrossStudioWindow activeProject="Motion_Sensor_Alarm" fileDialogDefaultFilter="*.c" autoConnectTarget="MSP-FET/MSP-FET430UIF/eZ-FET" buildConfiguration="MSP430 Debug" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="D:/Users/jlmeyers3/Documents/EE444 Labs/Project/EE444-Project" debugSearchPath="" autoConnectCapabilities="528255"/>
 </session>
