@@ -12,7 +12,7 @@
 extern int IncrementVcore(void);
 
 //global variables
-int i;
+//int i;
 
 void main(void) {
   //Setting core voltage to 2
