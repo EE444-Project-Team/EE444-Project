@@ -1,6 +1,6 @@
-#ifndef TRANSCIEVER__H
-#define  TRANSCIEVER__H
+#ifndef S_CLOCKS__H
+#define S_CLOCKS__H
 
 void setupClocks(void);
 
-#endif
+#endif // S_CLOCKS__H
