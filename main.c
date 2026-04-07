@@ -15,9 +15,9 @@ int i;
 
 void main(void) {
 //Setting core voltage to 2
-    for (i = 1; i <= 2; i++) {
-   IncrementVcore();
-   }
+   // for (i = 1; i <= 2; i++) {
+   //IncrementVcore();
+   //}
 setupClocks(); 
 //setupTransceiver();
 }
