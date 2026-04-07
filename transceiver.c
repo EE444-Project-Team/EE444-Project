@@ -2,8 +2,8 @@
 #include <stdio.h>
 #include <stdint.h>
 
-void setupTransceiver(void) {
 uint8_t data_array[4];
+void setupTransceiver(void) {
   //CE pin on transceiver 
   P1DIR |= BIT4;
   P1OUT &= ~BIT4;
@@ -23,7 +23,7 @@ uint8_t data_array[4];
 //SPI interface setup
   UCB0CTL1 |= UCSWRST;
   UCB0CTL0 = UCMST | UCSYNC | UCMSB | UCCKPH;
-  UCB0CTL1 |= UCSSEL__ACLK;
+  UCB0CTL1 |= UCSSEL__SMCLK;
   UCB0CTL1 &= ~UCSWRST;
   
 
@@ -146,13 +146,13 @@ uint8_t sendPayload(uint8_t cmd) {
 
 void delay(void){ 
   int x = 0;
-  for (x; x < 250 ; x++);
+  for (x; x < 2000 ; x++);
 }
 
 void powerupDelay(void) {
   int x = 0;
-  for (x; x<2250; x++);
+  for (x; x<18000; x++);
 }
 
-  //18000 / 8 power up delay
-  //2000 / 8 delay time
+  //18000 power up delay
+  //2000 delay time

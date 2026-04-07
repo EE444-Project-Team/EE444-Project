@@ -22,7 +22,6 @@
       <file file_name="clocks.c" />
       <file file_name="DecrementVcore.c" />
       <file file_name="IncrementVcore.c" />
-      <file file_name="../../Lab 6/Lab 6.c" />
     </folder>
     <folder Name="System Files">
       <configuration Name="Common" filter="xml" />
