@@ -2,6 +2,8 @@
 #include <stdio.h>
 #include <stdint.h>
 
+extern alarm_state;
+
 uint8_t data_array[4];
 void setupTransceiver(void) {
   //CE pin on transceiver 
@@ -18,7 +20,6 @@ void setupTransceiver(void) {
   P3SEL |= BIT1 | BIT2 | BIT3;
   P3DIR |= BIT1 | BIT3;
   P3DIR &= ~BIT2;
-
 
 //SPI interface setup
   UCB0CTL1 |= UCSWRST;
@@ -87,11 +88,13 @@ void Received_Data_ISR(void) __interrupt [PORT1_VECTOR] {
           
         switch(rx_array[0]) {
           case 0x17: break; //left
-          case 0x1E: //resetAlarm(); 
-          break; //FIXME bottom, reset
+          case 0x1E:
+            alarm_state = 0;
+          break; //bottom
           case 0x1B: break; //right
           case 0x1D: //setAlarm();
-          break; //FIXME top, set
+            alarm_state = 1;
+          break; //top
           case 0x0F: break; //center
           default: break; //none
         }

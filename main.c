@@ -7,15 +7,9 @@
 #include "uart.h"
 
 extern int IncrementVcore(void);
-
-//global variables
-//int i;
+extern int alarm_state = 0;
 
 void main(void) {
-  //Setting core voltage to 2
-  // for (i = 1; i <= 2; i++) {
-  //IncrementVcore();
-  //}
   setupClocks();
   init_uart();
   _EINT(); 
