@@ -1,4 +1,6 @@
 #include <msp430f5438a.h>
+#include "uart.h"
+time_t *time;
 void motion_sensor_init(void)
 {
 
