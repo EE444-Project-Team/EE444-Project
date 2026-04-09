@@ -22,6 +22,10 @@
       <file file_name="clocks.c" />
       <file file_name="DecrementVcore.c" />
       <file file_name="IncrementVcore.c" />
+      <file file_name="motionsensor.c" />
+      <file file_name="motionsensor.h" />
+      <file file_name="uart.c" />
+      <file file_name="uart.h" />
     </folder>
     <folder Name="System Files">
       <configuration Name="Common" filter="xml" />
