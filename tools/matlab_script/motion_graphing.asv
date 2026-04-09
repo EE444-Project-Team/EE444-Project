@@ -1,0 +1,58 @@
+% motion_graphing.m
+% written by: Ashley Schultz
+% Displays data sent from motion sensor
+
+
+clear all
+device = serialport('COM13', 9600, 'Timeout',20, 'Parity',"even");
+poll_msp(device);
+index = 1;
+xl = animatedline('Color', 'r');
+yl = animatedline('Color', 'g');
+zl = animatedline('Color', 'b');
+% Before the next loop, SYNCHRONIZE (Checksum?)
+while(1)
+    a = read(device, 3, "int16");
+    addpoints(xl,index, a(1));
+    addpoints(yl,index, a(2));
+    addpoints(zl,index, a(3));
+    axis ([index-150 index+150 0 500]);
+    %axis ([index-1850 index+150 -inf inf]);
+    drawnow limitrate;
+    index = index + 1;
+end
+
+function poll_msp(device)
+    while(1)
+        buff = read(device, 1, "uint8");
+        print("Got command");
+        print(buff(1));
+        switch(buff(1))
+            % Time request
+            case 1
+                t = datetime('now');
+                time = datevec(t);
+                flush(device)
+                f_day = uint8(time(3));
+                write(device, f_day, "uint8");
+                language = 'local';
+                DayForm = 'long';
+                [DayNumber,~] = weekday(t,DayForm,language);
+                dow_f = uint8(DayNumber);
+                write(device, dow_f, "uint8");
+                hour_f = uint8(time(4));
+                write(device, hour_f, "uint8");
+                min_f = uint8(time(5));
+                write(device, min_f, "uint8");
+                sec_f = uint8(time(6));
+                write(device, sec_f, "uint8");
+                print("Updated time ")
+            case 2
+                % Alarm trip
+                trip = read()
+                print("Motion sensor tripped at time x")
+            default
+               break;
+        end
+    end
+end
