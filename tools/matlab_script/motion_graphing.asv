@@ -49,7 +49,7 @@ function poll_msp(device)
                 print("Updated time ")
             case 2
                 % Alarm trip
-                % trip = read()
+                trip = read()
                 print("Motion sensor tripped at time x")
             default
                break;
