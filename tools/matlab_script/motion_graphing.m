@@ -4,7 +4,7 @@
 
 
 clear all
-device = serialport('COM13', 9600, 'Timeout',20, 'Parity',"even");
+device = serialport('COM13', 460800, 'Timeout',20, 'Parity',"even");
 poll_msp(device);
 index = 1;
 xl = animatedline('Color', 'r');
@@ -26,7 +26,6 @@ function poll_msp(device)
     while(1)
         buff = read(device, 1, "uint8");
         print("Got command");
-        print(buff(1));
         switch(buff(1))
             % Time request
             case 1
@@ -46,13 +45,19 @@ function poll_msp(device)
                 write(device, min_f, "uint8");
                 sec_f = uint8(time(6));
                 write(device, sec_f, "uint8");
-                print("Updated time ")
+                disp('Time updated')
             case 2
                 % Alarm trip
-                % trip = read()
-                print("Motion sensor tripped at time x")
-            default
-               break;
+                day = read(device, 1, "uint8");
+                dow = read(device, 1, "uint8");
+                hour = read(device, 1, "uint8");
+                minute = read(device, 1, "uint8");
+                second = read(device, 1, "uint8");
+                disp('Motion sensor tripped at')
+                disp(datetime([2026 4 day hour minute second]))
+                [~,Dayname] = weekday(datetime([2026 4 day hour minute second]), 'long', 'local');
+                disp('At day of the week: ')
+                disp(Dayname)
         end
     end
 end
