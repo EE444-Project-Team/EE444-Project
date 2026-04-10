@@ -1,5 +1,6 @@
 #include <msp430.h>
 #include "uart.h"
+#include "transceiver.h"
 
 int size = 0;
 
@@ -20,6 +21,7 @@ void init_uart(void) {
 
 
 void get_time_from_matlab(time_t *time) {
+  delay();
   UCA1TXBUF = 1;
   while(!(UCA1IFG&UCRXIFG));
   time->day = UCA1RXBUF;

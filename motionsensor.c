@@ -15,10 +15,11 @@ P1IE |= BIT6; //interrupt enable
 P1IES |= BIT6; // hi-to-lo interrupt edge select
 
 // Testing w/ LED
-P1DIR |= P1DIR | BIT0;
+P1DIR |= BIT0;
 P1OUT |= BIT0;
 
 //rtc setup
+ get_time_from_matlab(time);
  RTCCTL1 = 0b00100000;
  RTCSEC = time->sec;
  RTCMIN = time->min;
