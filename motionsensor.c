@@ -6,7 +6,7 @@ void motion_sensor_init(void)
 
 //set up motion sensor pins-gpio
 P1SEL &= ~BIT6; //pin 1.6 i/o
-P1DIR &= ~BIT6; // pin dir output
+P1DIR &= ~BIT6; // pin dir input
 
 P1REN |= BIT6; //pull up/down resistor enable
 P1OUT |= BIT6; // selecting pull up
@@ -32,7 +32,7 @@ P1OUT |= BIT0;
  RTCCTL1 |= RTCRDY;
  while (!RTCRDY);
 }
-
+/*
 void motion_ISR(void) __interrupt [PORT1_VECTOR] {
   switch(P1IV) {
   case 0x0E:
@@ -45,5 +45,4 @@ void motion_ISR(void) __interrupt [PORT1_VECTOR] {
   alarm_trip(time);
   break;
   default: break;
-  }
-}
+  } */

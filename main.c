@@ -5,6 +5,7 @@
 #include "transceiver.h"
 #include "clocks.h"
 #include "uart.h"
+#include "motionsensor.h"
 
 extern int alarm_state = 1;
 

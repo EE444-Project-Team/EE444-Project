@@ -1,8 +1,12 @@
 #include <msp430.h>
 #include <stdio.h>
 #include <stdint.h>
+#include "uart.h"
+#include "motionsensor.h"
+#include "transceiver.h"
 
 extern alarm_state;
+extern time_t * time;
 
 uint8_t data_array[4];
 void setupTransceiver(void) {
@@ -84,24 +88,32 @@ void Received_Data_ISR(void) __interrupt [PORT1_VECTOR] {
       P1OUT &= ~BIT5; //reset CSN
       sendCmd(0x27, 0x40); //Clear RF FIFO interrupt
       P1OUT |= BIT5; //set CSN
-
-          
-        switch(rx_array[0]) {
-          case 0x17: break; //left
-          case 0x1E:
-            alarm_state = 0;
-          break; //bottom
-          case 0x1B: break; //right
-          case 0x1D: //setAlarm();
-            alarm_state = 1;
-          break; //top
-          case 0x0F: break; //center
-          default: break; //none
-        }
-        delay();
-        P1OUT |= BIT4; //ce high
-    break;
+      switch(rx_array[0]) {
+        case 0x17: break; //left
+        case 0x1E:
+          alarm_state = 0;
+        break; //bottom
+        case 0x1B: break; //right
+        case 0x1D: //setAlarm();
+          alarm_state = 1;
+        break; //top
+        case 0x0F: break; //center
+        default: break; //none
+      }
+      delay();
+      P1OUT |= BIT4; //ce high
+      break;
     case 0x04: break; //tx
+    case 0x0E:
+      P1OUT ^= BIT0; //led testing
+      time->sec = RTCSEC;
+      time->min = RTCMIN;
+      time->hour = RTCHOUR;
+      time->day_of_week = RTCDOW;
+      time->day = RTCDAY;
+      alarm_trip(time);
+      break;
+    default: break;
   }
 }
 
