@@ -8,6 +8,12 @@
 extern alarm_state;
 extern time_t * time;
 
+extern currday;
+extern currdow;
+extern currhour;
+extern currmin;
+extern currsec;
+
 uint8_t data_array[4];
 void setupTransceiver(void) {
   //CE pin on transceiver 
@@ -106,12 +112,12 @@ void Received_Data_ISR(void) __interrupt [PORT1_VECTOR] {
     case 0x04: break; //tx
     case 0x0E:
       P1OUT ^= BIT0; //led testing
-      time->sec = RTCSEC;
-      time->min = RTCMIN;
-      time->hour = RTCHOUR;
-      time->day_of_week = RTCDOW;
-      time->day = RTCDAY;
-      alarm_trip(time);
+      currsec = RTCSEC;
+      currmin = RTCMIN;
+      currhour = RTCHOUR;
+      currdow = RTCDOW;
+      currday = RTCDAY;
+      alarm_trip();
       break;
     default: break;
   }

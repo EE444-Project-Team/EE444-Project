@@ -13,9 +13,9 @@ typedef struct {
   uint8_t sec;
 } time_t;
 
-void get_time_from_matlab(time_t *time);
+void get_time_from_matlab(void);
 
-void alarm_trip(time_t *time);
+void alarm_trip(void);
 
 void init_uart(void);
 

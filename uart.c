@@ -3,8 +3,18 @@
 #include "transceiver.h"
 
 int size = 0;
-
 extern alarm_state;
+
+uint8_t currday;
+uint8_t currdow;
+uint8_t currhour;
+uint8_t currmin;
+uint8_t currsec;
+
+
+//FIXME delete these
+uint8_t testvar;
+uint8_t breakpoint;
 
 void init_uart(void) {
   // Set up UART
@@ -20,34 +30,36 @@ void init_uart(void) {
 }
 
 
-void get_time_from_matlab(time_t *time) {
+void get_time_from_matlab(void) {
   delay();
   UCA1TXBUF = 1;
   while(!(UCA1IFG&UCRXIFG));
-  time->day = UCA1RXBUF;
+  //testvar = UCA1RXBUF;
+  currday = UCA1RXBUF;
+  breakpoint = 1;
   while(!(UCA1IFG&UCRXIFG));
-  time->day_of_week = UCA1RXBUF;
+  currdow = UCA1RXBUF;
   while(!(UCA1IFG&UCRXIFG));
-  time->hour = UCA1RXBUF;
+  currhour = UCA1RXBUF;
   while(!(UCA1IFG&UCRXIFG));
-  time->min = UCA1RXBUF;
+  currmin = UCA1RXBUF;
   while(!(UCA1IFG&UCRXIFG));
-  time->sec = UCA1RXBUF;
+  currsec = UCA1RXBUF;
 }
 
-void alarm_trip(time_t *time) {
+void alarm_trip(void) {
   if (alarm_state) {
     UCA1TXBUF = 2;
     while(!(UCA1IFG&UCTXIFG));
-    UCA1TXBUF = time->day;
+    UCA1TXBUF = currday;
     while(!(UCA1IFG&UCTXIFG));
-    UCA1TXBUF = time->day_of_week;
+    UCA1TXBUF = currdow;
     while(!(UCA1IFG&UCTXIFG));
-    UCA1TXBUF = time->hour;
+    UCA1TXBUF = currhour;
     while(!(UCA1IFG&UCTXIFG));
-    UCA1TXBUF= time->min;
+    UCA1TXBUF= currmin;
     while(!(UCA1IFG&UCTXIFG));
-    UCA1TXBUF = time->sec;
+    UCA1TXBUF = currsec;
   } else {
     //Do nothing
   }

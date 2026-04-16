@@ -1,6 +1,13 @@
 #include <msp430f5438a.h>
 #include "uart.h"
 time_t *time;
+
+extern currday;
+extern currdow;
+extern currhour;
+extern currmin;
+extern currsec;
+
 void motion_sensor_init(void)
 {
 
@@ -19,13 +26,13 @@ P1DIR |= BIT0;
 P1OUT |= BIT0;
 
 //rtc setup
- get_time_from_matlab(time);
+ get_time_from_matlab();
  RTCCTL1 = 0b00100000;
- RTCSEC = time->sec;
- RTCMIN = time->min;
- RTCHOUR = time->hour;
- RTCDOW = time->day_of_week;
- RTCDAY = time->day;
+ RTCSEC = currsec;
+ RTCMIN = currmin;
+ RTCHOUR = currhour;
+ RTCDOW = currdow;
+ RTCDAY = currday;
  RTCMON = 0b00000100; //setting to april
  RTCYEARL = 0b11101010; //setting year
  RTCYEARH = 0b00000111;
