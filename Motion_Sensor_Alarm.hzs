@@ -96,16 +96,16 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="11" y="16" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="main.c" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="12" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="main.c" selected="0" top="0" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="29" y="4" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="transceiver.h" selected="0" top="0" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="1" y="182" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="transceiver.c" selected="0" top="171" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="clocks.h" selected="0" top="0" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="6" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="clocks.c" selected="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="18" y="17" useTextEdit="1" openedFrom="D:/Users/hklebesadel2/EE444-Project/transceiver.c" useBinaryEdit="0" left="0" path="uart.c" selected="0" top="42" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="28" y="36" useTextEdit="1" openedFrom="D:/Users/hklebesadel2/EE444-Project/transceiver.c" useBinaryEdit="0" left="0" path="uart.c" selected="1" top="18" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="22" useTextEdit="1" openedFrom="D:/Users/hklebesadel2/EE444-Project/uart.c" useBinaryEdit="0" left="0" path="uart.h" selected="0" top="0" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="40" useTextEdit="1" openedFrom="D:/Users/jlmeyers3/Documents/EE444 Labs/Project/EE444-Project/main.c" useBinaryEdit="0" left="0" path="motionsensor.c" selected="0" top="0" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="5" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="motionsensor.h" selected="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="40" y="2079" useTextEdit="1" openedFrom="D:/Users/hklebesadel2/EE444-Project/transceiver.c" useBinaryEdit="0" left="0" path="../AppData/Local/Rowley Associates Limited/CrossWorks for MSP430/v3/packages/include/msp430f5438a.h" selected="1" top="2023" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="40" y="2079" useTextEdit="1" openedFrom="D:/Users/hklebesadel2/EE444-Project/transceiver.c" useBinaryEdit="0" left="0" path="../AppData/Local/Rowley Associates Limited/CrossWorks for MSP430/v3/packages/include/msp430f5438a.h" selected="0" top="2023" codecName="Default"/>
  </Files>
  <MSP430CrossStudioWindow activeProject="Motion_Sensor_Alarm" fileDialogDefaultFilter="*.c" autoConnectTarget="MSP-FET/MSP-FET430UIF/eZ-FET" buildConfiguration="MSP430 Debug" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="D:/Users/jlmeyers3/Documents/EE444 Labs/Project/EE444-Project" debugSearchPath="" autoConnectCapabilities="528255"/>
 </session>

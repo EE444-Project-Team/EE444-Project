@@ -35,9 +35,7 @@ void get_time_from_matlab(void) {
   delay();
   UCA1TXBUF = 1;
   while(!(UCA1IFG&UCRXIFG));
-  //testvar = UCA1RXBUF;
   currday = UCA1RXBUF;
-  breakpoint = 1;
   while(!(UCA1IFG&UCRXIFG));
   currdow = UCA1RXBUF;
   while(!(UCA1IFG&UCRXIFG));
