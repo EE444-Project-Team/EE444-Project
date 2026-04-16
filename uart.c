@@ -11,6 +11,12 @@ uint8_t currhour;
 uint8_t currmin;
 uint8_t currsec;
 
+extern intcurrday;
+extern intcurrdow;
+extern intcurrhour;
+extern intcurrmin;
+extern intcurrsec;
+
 
 //FIXME delete these
 uint8_t testvar;
@@ -51,15 +57,15 @@ void alarm_trip(void) {
   if (alarm_state) {
     UCA1TXBUF = 2;
     while(!(UCA1IFG&UCTXIFG));
-    UCA1TXBUF = currday;
+    UCA1TXBUF = intcurrday;
     while(!(UCA1IFG&UCTXIFG));
-    UCA1TXBUF = currdow;
+    UCA1TXBUF = intcurrdow;
     while(!(UCA1IFG&UCTXIFG));
-    UCA1TXBUF = currhour;
+    UCA1TXBUF = intcurrhour;
     while(!(UCA1IFG&UCTXIFG));
-    UCA1TXBUF= currmin;
+    UCA1TXBUF= intcurrmin;
     while(!(UCA1IFG&UCTXIFG));
-    UCA1TXBUF = currsec;
+    UCA1TXBUF = intcurrsec;
   } else {
     //Do nothing
   }

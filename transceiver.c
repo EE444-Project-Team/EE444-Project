@@ -14,6 +14,15 @@ extern currhour;
 extern currmin;
 extern currsec;
 
+int intcurrday;
+int intcurrdow;
+int intcurrhour;
+int intcurrmin;
+int intcurrsec;
+
+//FIXME delete these
+int testvar1;
+
 uint8_t data_array[4];
 void setupTransceiver(void) {
   //CE pin on transceiver 
@@ -112,11 +121,13 @@ void Received_Data_ISR(void) __interrupt [PORT1_VECTOR] {
     case 0x04: break; //tx
     case 0x0E:
       P1OUT ^= BIT0; //led testing
-      currsec = RTCSEC;
-      currmin = RTCMIN;
-      currhour = RTCHOUR;
-      currdow = RTCDOW;
-      currday = RTCDAY;
+      
+      intcurrsec = RTCSEC;
+      intcurrmin = RTCMIN;
+      intcurrhour = RTCHOUR;
+      intcurrdow = RTCDOW;
+      intcurrday = RTCDAY;
+
       alarm_trip();
       break;
     default: break;

@@ -4,7 +4,7 @@
 
 
 clear all
-device = serialport('COM9', 460800, 'Timeout',20000, 'Parity',"even");
+device = serialport('COM20', 460800, 'Timeout',20000, 'Parity',"even");
 poll_msp(device);
 
 function poll_msp(device)

@@ -2,10 +2,8 @@
 <session>
  <Bookmarks/>
  <Breakpoints groups="Breakpoints;Exceptions" active_group="Breakpoints">
-  <BreakpointListItem trigger="" line="39" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="" group="Breakpoints" type="Breakpoint" state="2" filename="motionsensor.c" useHWbreakpoint="false"/>
-  <BreakpointListItem trigger="" line="100" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="" group="Breakpoints" type="Breakpoint" state="2" filename="transceiver.c" useHWbreakpoint="false"/>
-  <BreakpointListItem trigger="" line="104" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="" group="Breakpoints" type="Breakpoint" state="2" filename="transceiver.c" useHWbreakpoint="false"/>
-  <BreakpointListItem trigger="" line="114" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="" group="Breakpoints" type="Breakpoint" state="2" filename="transceiver.c" useHWbreakpoint="false"/>
+  <BreakpointListItem trigger="" line="109" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="" group="Breakpoints" type="Breakpoint" state="2" filename="transceiver.c" useHWbreakpoint="false"/>
+  <BreakpointListItem trigger="" line="113" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="" group="Breakpoints" type="Breakpoint" state="2" filename="transceiver.c" useHWbreakpoint="false"/>
  </Breakpoints>
  <EEMRegistersWindow>
   <EEMRegisters generalClockControl="2e" moduleClockControl="40f"/>
@@ -83,13 +81,17 @@
  </TraceWindow>
  <Watch1>
   <Watches active="1" update="Never">
-   <Watchpoint expression="testvar" name="testvar" radix="-1" linenumber="37" filename="uart.c"/>
-   <Watchpoint expression="time->day" name="time->day" radix="-1" linenumber="38" filename="uart.c"/>
-   <Watchpoint expression="currsec" name="currsec" radix="-1" linenumber="47" filename="uart.c"/>
-   <Watchpoint expression="currmin" name="currmin" radix="10" linenumber="45" filename="uart.c"/>
-   <Watchpoint expression="currhour" name="currhour" radix="10" linenumber="43" filename="uart.c"/>
-   <Watchpoint expression="currdow" name="currdow" radix="10" linenumber="41" filename="uart.c"/>
-   <Watchpoint expression="currday" name="currday" radix="10" linenumber="38" filename="uart.c"/>
+   <Watchpoint expression="testvar" name="testvar" radix="-1" linenumber="43" filename="uart.c"/>
+   <Watchpoint expression="time->day" name="time->day" radix="-1" linenumber="44" filename="uart.c"/>
+   <Watchpoint expression="currsec" name="currsec" radix="-1" linenumber="53" filename="uart.c"/>
+   <Watchpoint expression="currmin" name="currmin" radix="10" linenumber="51" filename="uart.c"/>
+   <Watchpoint expression="currhour" name="currhour" radix="10" linenumber="49" filename="uart.c"/>
+   <Watchpoint expression="currdow" name="currdow" radix="10" linenumber="47" filename="uart.c"/>
+   <Watchpoint expression="currday" name="currday" radix="10" linenumber="44" filename="uart.c"/>
+   <Watchpoint expression="testvar1" name="testvar1" radix="10" linenumber="133" filename="transceiver.c"/>
+   <Watchpoint expression="intcurrdow" name="intcurrdow" radix="-1" linenumber="128" filename="transceiver.c"/>
+   <Watchpoint expression="intcurrhour" name="intcurrhour" radix="-1" linenumber="127" filename="transceiver.c"/>
+   <Watchpoint expression="intcurrmin" name="intcurrmin" radix="-1" linenumber="126" filename="transceiver.c"/>
   </Watches>
  </Watch1>
  <Watch2>
@@ -102,17 +104,18 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="1" y="18" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="main.c" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="12" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="main.c" selected="0" top="0" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="12" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="transceiver.h" selected="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="16" y="12" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="transceiver.c" selected="1" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="34" y="114" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="transceiver.c" selected="1" top="109" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="clocks.h" selected="0" top="0" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="6" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="clocks.c" selected="0" top="0" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="24" y="357" useTextEdit="1" openedFrom="D:/Users/jlmeyers3/Documents/EE444 Labs/Project/EE444-Project/main.c" useBinaryEdit="0" left="0" path="../../../../AppData/Local/Rowley Associates Limited/CrossWorks for MSP430/v3/packages/include/msp430.h" selected="0" top="341" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="8" y="4289" useTextEdit="1" openedFrom="D:/Users/jlmeyers3/Documents/EE444 Labs/Project/EE444-Project/motionsensor.c" useBinaryEdit="0" left="0" path="../../../../AppData/Local/Rowley Associates Limited/CrossWorks for MSP430/v3/packages/include/msp430f5438a.h" selected="0" top="4264" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="46" useTextEdit="1" openedFrom="D:/Users/jlmeyers3/Documents/EE444 Labs/Project/EE444-Project/motionsensor.c" useBinaryEdit="0" left="0" path="uart.c" selected="0" top="21" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="37" y="2107" useTextEdit="1" openedFrom="D:/Users/jlmeyers3/Documents/EE444 Labs/Project/EE444-Project/transceiver.c" useBinaryEdit="0" left="0" path="../../../../AppData/Local/Rowley Associates Limited/CrossWorks for MSP430/v3/packages/include/msp430f5438a.h" selected="0" top="2105" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="26" y="59" useTextEdit="1" openedFrom="D:/Users/jlmeyers3/Documents/EE444 Labs/Project/EE444-Project/motionsensor.c" useBinaryEdit="0" left="0" path="uart.c" selected="0" top="24" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="15" y="10" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="uart.h" selected="0" top="0" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="39" useTextEdit="1" openedFrom="D:/Users/jlmeyers3/Documents/EE444 Labs/Project/EE444-Project/main.c" useBinaryEdit="0" left="0" path="motionsensor.c" selected="0" top="0" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="7" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="motionsensor.h" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="8" y="168" useTextEdit="1" openedFrom="D:/Users/jlmeyers3/Documents/EE444 Labs/Project/EE444-Project/transceiver.c" useBinaryEdit="0" left="0" path="C:/Program Files (x86)/Rowley Associates Limited/CrossWorks for MSP430 3.2/include/stdint.h" selected="0" top="145" codecName="Default"/>
  </Files>
  <MSP430CrossStudioWindow activeProject="Motion_Sensor_Alarm" fileDialogDefaultFilter="*.c" autoConnectTarget="MSP-FET/MSP-FET430UIF/eZ-FET" buildConfiguration="MSP430 Debug" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="D:/Users/jlmeyers3/Documents/EE444 Labs/Project/EE444-Project" debugSearchPath="" autoConnectCapabilities="528255"/>
 </session>
