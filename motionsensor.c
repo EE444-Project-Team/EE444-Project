@@ -1,6 +1,5 @@
 #include <msp430f5438a.h>
 #include "uart.h"
-time_t *time;
 
 extern currday;
 extern currdow;
@@ -39,17 +38,4 @@ P1OUT |= BIT0;
  RTCCTL1 |= RTCRDY;
  while (!RTCRDY);
 }
-/*
-void motion_ISR(void) __interrupt [PORT1_VECTOR] {
-  switch(P1IV) {
-  case 0x0E:
-  P1OUT ^= BIT0; //led testing
-  time->sec = RTCSEC;
-  time->min = RTCMIN;
-  time->hour = RTCHOUR;
-  time->day_of_week = RTCDOW;
-  time->day = RTCDAY;
-  alarm_trip(time);
-  break;
-  default: break;
-  } */
+

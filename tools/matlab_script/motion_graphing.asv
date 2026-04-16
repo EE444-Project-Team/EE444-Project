@@ -4,28 +4,14 @@
 
 
 clear all
-device = serialport('COM13', 9600, 'Timeout',20, 'Parity',"even");
+device = serialport('COM20', 460800, 'Timeout',20000, 'Parity',"even");
 poll_msp(device);
-index = 1;
-xl = animatedline('Color', 'r');
-yl = animatedline('Color', 'g');
-zl = animatedline('Color', 'b');
-% Before the next loop, SYNCHRONIZE (Checksum?)
-while(1)
-    a = read(device, 3, "int16");
-    addpoints(xl,index, a(1));
-    addpoints(yl,index, a(2));
-    addpoints(zl,index, a(3));
-    axis ([index-150 index+150 0 500]);
-    %axis ([index-1850 index+150 -inf inf]);
-    drawnow limitrate;
-    index = index + 1;
-end
 
 function poll_msp(device)
     while(1)
+        flush(device);
         buff = read(device, 1, "uint8");
-        print("Got command");
+        disp('Got command')
         switch(buff(1))
             % Time request
             case 1
@@ -55,8 +41,9 @@ function poll_msp(device)
                 second = read(device, 1, "uint8");
                 disp('Motion sensor tripped at')
                 disp(datetime([2026 4 day hour minute second]))
+                [~,Dayname] = weekday(datetime([2026 4 day hour minute second]), 'long', 'local');
                 disp('At day of the week: ')
-                disp(dow)
+                disp(Dayname)
         end
     end
 end

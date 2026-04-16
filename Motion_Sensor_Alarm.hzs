@@ -1,10 +1,7 @@
 <!DOCTYPE CrossStudio_Session_File>
 <session>
  <Bookmarks/>
- <Breakpoints groups="Breakpoints;Exceptions" active_group="Breakpoints">
-  <BreakpointListItem trigger="" line="109" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="" group="Breakpoints" type="Breakpoint" state="2" filename="transceiver.c" useHWbreakpoint="false"/>
-  <BreakpointListItem trigger="" line="113" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="" group="Breakpoints" type="Breakpoint" state="2" filename="transceiver.c" useHWbreakpoint="false"/>
- </Breakpoints>
+ <Breakpoints groups="Exceptions;Breakpoints" active_group="Breakpoints"/>
  <EEMRegistersWindow>
   <EEMRegisters generalClockControl="2e" moduleClockControl="40f"/>
  </EEMRegistersWindow>
@@ -23,7 +20,7 @@
   <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" addressOrder="0" columnsText="" refreshPeriod="0" name="Lab 3" radix="16" sizeText="" addressText=""/>
   <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" addressOrder="0" columnsText="" refreshPeriod="0" name="Lab 4" radix="16" sizeText="" addressText=""/>
   <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" addressOrder="0" columnsText="" refreshPeriod="0" name="Lab 5 Meyers" radix="16" sizeText="" addressText=""/>
-  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" addressOrder="0" columnsText="" refreshPeriod="0" name="Motion_Sensor_Alarm" radix="16" sizeText="" addressText=""/>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" addressOrder="0" columnsText="" refreshPeriod="0" name="Motion_Sensor_Alarm" radix="16" sizeText="sizeof sec" addressText="0x0"/>
  </Memory1>
  <Memory2>
   <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" addressOrder="0" columnsText="" refreshPeriod="0" name="Lab 3" radix="16" sizeText="" addressText=""/>
@@ -52,7 +49,7 @@
   <RegisterWindow visibleNodes="CPU Registers/PC;CPU Registers/SP;CPU Registers/SR;CPU Registers/R4;CPU Registers/R5;CPU Registers/R6;CPU Registers/R7;CPU Registers/R8;CPU Registers/R9;CPU Registers/R10;CPU Registers/R11;CPU Registers/R12;CPU Registers/R13;CPU Registers/R14;CPU Registers/R15;ADC12_A/ADC12CTL0;ADC12_A/ADC12CTL1;ADC12_A/ADC12CTL2;ADC12_A/ADC12IFG;ADC12_A/ADC12IE;ADC12_A/ADC12IV;ADC12_A/ADC12MCTL0;ADC12_A/ADC12MCTL1;ADC12_A/ADC12MCTL2;ADC12_A/ADC12MCTL3;ADC12_A/ADC12MCTL4;ADC12_A/ADC12MCTL5;ADC12_A/ADC12MCTL6;ADC12_A/ADC12MCTL7;ADC12_A/ADC12MCTL8;ADC12_A/ADC12MCTL9;ADC12_A/ADC12MCTL10;ADC12_A/ADC12MCTL11;ADC12_A/ADC12MCTL12;ADC12_A/ADC12MCTL13;ADC12_A/ADC12MCTL14;ADC12_A/ADC12MCTL15;ADC12_A/ADC12MEM0;ADC12_A/ADC12MEM1;ADC12_A/ADC12MEM2;ADC12_A/ADC12MEM3;ADC12_A/ADC12MEM4;ADC12_A/ADC12MEM5;ADC12_A/ADC12MEM6;ADC12_A/ADC12MEM7;ADC12_A/ADC12MEM8;ADC12_A/ADC12MEM9;ADC12_A/ADC12MEM10;ADC12_A/ADC12MEM11;ADC12_A/ADC12MEM12;ADC12_A/ADC12MEM13;ADC12_A/ADC12MEM14;ADC12_A/ADC12MEM15" binaryNodes="" asciiNodes="" openNodes="ADC12_A;ADC12_A/ADC12CTL0" name="Lab 3" decimalNodes="" octalNodes="" unsignedNodes=""/>
   <RegisterWindow visibleNodes="CPU Registers/PC;CPU Registers/SP;CPU Registers/SR;CPU Registers/R4;CPU Registers/R5;CPU Registers/R6;CPU Registers/R7;CPU Registers/R8;CPU Registers/R9;CPU Registers/R10;CPU Registers/R11;CPU Registers/R12;CPU Registers/R13;CPU Registers/R14;CPU Registers/R15" binaryNodes="" asciiNodes="" openNodes="CPU Registers" name="Lab 4" decimalNodes="" octalNodes="" unsignedNodes=""/>
   <RegisterWindow visibleNodes="CPU Registers/PC;CPU Registers/SP;CPU Registers/SR;CPU Registers/R4;CPU Registers/R5;CPU Registers/R6;CPU Registers/R7;CPU Registers/R8;CPU Registers/R9;CPU Registers/R10;CPU Registers/R11;CPU Registers/R12;CPU Registers/R13;CPU Registers/R14;CPU Registers/R15;UCSI_A1_UART/UCA1CTLW0;UCSI_A1_UART/UCA1CTL0;UCSI_A1_UART/UCA1CTL1;UCSI_A1_UART/UCA1BRW;UCSI_A1_UART/UCA1BR0;UCSI_A1_UART/UCA1BR1;UCSI_A1_UART/UCA1MCTL;UCSI_A1_UART/UCA1STAT;UCSI_A1_UART/UCA1RXBUF;UCSI_A1_UART/UCA1TXBUF;UCSI_A1_UART/UCA1ABCTL;UCSI_A1_UART/UCA1IRCTL;UCSI_A1_UART/UCA1IRTCTL;UCSI_A1_UART/UCA1IRRCTL;UCSI_A1_UART/UCA1ICTL;UCSI_A1_UART/UCA1IE;UCSI_A1_UART/UCA1IFG;UCSI_A1_UART/UCA1IV" binaryNodes="" asciiNodes="" openNodes="UCSI_A1_UART" name="Lab 5 Meyers" decimalNodes="" octalNodes="" unsignedNodes=""/>
-  <RegisterWindow visibleNodes="CPU Registers/PC;CPU Registers/SP;CPU Registers/SR;CPU Registers/R4;CPU Registers/R5;CPU Registers/R6;CPU Registers/R7;CPU Registers/R8;CPU Registers/R9;CPU Registers/R10;CPU Registers/R11;CPU Registers/R12;CPU Registers/R13;CPU Registers/R14;CPU Registers/R15;RTC_A/RTCCTL01;RTC_A/RTCCTL0;RTC_A/RTCCTL1;RTC_A/RTCCTL23;RTC_A/RTCCTL2;RTC_A/RTCCTL3;RTC_A/RTCPS0CTL;RTC_A/RTCPS0CTL_L;RTC_A/RTCPS0CTL_H;RTC_A/RTCPS1CTL;RTC_A/RTCPS1CTL_L;RTC_A/RTCPS1CTL_H;RTC_A/RTCPS;RTC_A/RTCPS_L;RTC_A/RTCPS_H;RTC_A/RTCIV;RTC_A/RTCTIM0;RTC_A/RTCSEC;RTC_A/RTCMIN;RTC_A/RTCTIM1;RTC_A/RTCHOUR;RTC_A/RTCDOW;RTC_A/RTCDATE;RTC_A/RTCDAY;RTC_A/RTCMON;RTC_A/RTCYEAR;RTC_A/RTCYEARL;RTC_A/RTCYEARH;RTC_A/RTCAMINHR;RTC_A/RTCAMIN;RTC_A/RTCAHOUR;RTC_A/RTCADOWDAY;RTC_A/RTCADOW;RTC_A/RTCADAY;P1/P1IN;P1/P1OUT;P1/P1DIR;P1/P1REN;P1/P1DS;P1/P1SEL;P1/P1IV;P1/P1IES;P1/P1IE;P1/P1IFG" binaryNodes="" asciiNodes="" openNodes="RTC_A" name="Motion_Sensor_Alarm" decimalNodes="" octalNodes="" unsignedNodes=""/>
+  <RegisterWindow visibleNodes="CPU Registers/PC;CPU Registers/SP;CPU Registers/SR;CPU Registers/R4;CPU Registers/R5;CPU Registers/R6;CPU Registers/R7;CPU Registers/R8;CPU Registers/R9;CPU Registers/R10;CPU Registers/R11;CPU Registers/R12;CPU Registers/R13;CPU Registers/R14;CPU Registers/R15;RTC_A/RTCCTL01;RTC_A/RTCCTL0;RTC_A/RTCCTL1;RTC_A/RTCCTL23;RTC_A/RTCCTL2;RTC_A/RTCCTL3;RTC_A/RTCPS0CTL;RTC_A/RTCPS0CTL_L;RTC_A/RTCPS0CTL_H;RTC_A/RTCPS1CTL;RTC_A/RTCPS1CTL_L;RTC_A/RTCPS1CTL_H;RTC_A/RTCPS;RTC_A/RTCPS_L;RTC_A/RTCPS_H;RTC_A/RTCIV;RTC_A/RTCTIM0;RTC_A/RTCSEC;RTC_A/RTCMIN;RTC_A/RTCTIM1;RTC_A/RTCHOUR;RTC_A/RTCDOW;RTC_A/RTCDATE;RTC_A/RTCDAY;RTC_A/RTCMON;RTC_A/RTCYEAR;RTC_A/RTCYEARL;RTC_A/RTCYEARH;RTC_A/RTCAMINHR;RTC_A/RTCAMIN;RTC_A/RTCAHOUR;RTC_A/RTCADOWDAY;RTC_A/RTCADOW;RTC_A/RTCADAY;P1/P1IN;P1/P1OUT;P1/P1DIR;P1/P1REN;P1/P1DS;P1/P1SEL;P1/P1IV;P1/P1IES;P1/P1IE;P1/P1IFG;UCSI_A1_UART/UCA1CTLW0;UCSI_A1_UART/UCA1CTL0;UCSI_A1_UART/UCA1CTL1;UCSI_A1_UART/UCA1BRW;UCSI_A1_UART/UCA1BR0;UCSI_A1_UART/UCA1BR1;UCSI_A1_UART/UCA1MCTL;UCSI_A1_UART/UCA1STAT;UCSI_A1_UART/UCA1RXBUF;UCSI_A1_UART/UCA1TXBUF;UCSI_A1_UART/UCA1ABCTL;UCSI_A1_UART/UCA1IRCTL;UCSI_A1_UART/UCA1IRTCTL;UCSI_A1_UART/UCA1IRRCTL;UCSI_A1_UART/UCA1ICTL;UCSI_A1_UART/UCA1IE;UCSI_A1_UART/UCA1IFG;UCSI_A1_UART/UCA1IV" binaryNodes="" asciiNodes="" openNodes="CPU Registers;RTC_A;P1;UCSI_A1_UART;UCSI_A1_UART/UCA1IFG" name="Motion_Sensor_Alarm" decimalNodes="" octalNodes="" unsignedNodes=""/>
  </Register1>
  <Register2>
   <RegisterWindow visibleNodes="CPU Registers/PC;CPU Registers/SP;CPU Registers/SR;CPU Registers/R4;CPU Registers/R5;CPU Registers/R6;CPU Registers/R7;CPU Registers/R8;CPU Registers/R9;CPU Registers/R10;CPU Registers/R11;CPU Registers/R12;CPU Registers/R13;CPU Registers/R14;CPU Registers/R15" binaryNodes="" asciiNodes="" openNodes="CPU Registers" name="Lab 3" decimalNodes="" octalNodes="" unsignedNodes=""/>
@@ -80,18 +77,13 @@
   <Trace enabled="Yes"/>
  </TraceWindow>
  <Watch1>
-  <Watches active="1" update="Never">
-   <Watchpoint expression="testvar" name="testvar" radix="-1" linenumber="43" filename="uart.c"/>
-   <Watchpoint expression="time->day" name="time->day" radix="-1" linenumber="44" filename="uart.c"/>
-   <Watchpoint expression="currsec" name="currsec" radix="-1" linenumber="53" filename="uart.c"/>
-   <Watchpoint expression="currmin" name="currmin" radix="10" linenumber="51" filename="uart.c"/>
-   <Watchpoint expression="currhour" name="currhour" radix="10" linenumber="49" filename="uart.c"/>
-   <Watchpoint expression="currdow" name="currdow" radix="10" linenumber="47" filename="uart.c"/>
-   <Watchpoint expression="currday" name="currday" radix="10" linenumber="44" filename="uart.c"/>
-   <Watchpoint expression="testvar1" name="testvar1" radix="10" linenumber="133" filename="transceiver.c"/>
-   <Watchpoint expression="intcurrdow" name="intcurrdow" radix="-1" linenumber="128" filename="transceiver.c"/>
-   <Watchpoint expression="intcurrhour" name="intcurrhour" radix="-1" linenumber="127" filename="transceiver.c"/>
-   <Watchpoint expression="intcurrmin" name="intcurrmin" radix="-1" linenumber="126" filename="transceiver.c"/>
+  <Watches active="1" update="Twice a Second">
+   <Watchpoint expression="time" name="time" radix="-1" linenumber="30" filename="uart.c"/>
+   <Watchpoint expression="time->sec" name="time->sec" radix="10" linenumber="30" filename="uart.c"/>
+   <Watchpoint expression="time->min" name="time->min" radix="10" linenumber="28" filename="uart.c"/>
+   <Watchpoint expression="time->hour" name="time->hour" radix="10" linenumber="26" filename="uart.c"/>
+   <Watchpoint expression="time->day_of_week" name="time->day_of_week" radix="10" linenumber="24" filename="uart.c"/>
+   <Watchpoint expression="time->day" name="time->day" radix="10" linenumber="22" filename="uart.c"/>
   </Watches>
  </Watch1>
  <Watch2>
@@ -104,18 +96,16 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="12" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="main.c" selected="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="12" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="transceiver.h" selected="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="34" y="114" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="transceiver.c" selected="1" top="109" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="11" y="16" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="main.c" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="29" y="4" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="transceiver.h" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="1" y="182" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="transceiver.c" selected="0" top="171" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="clocks.h" selected="0" top="0" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="6" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="clocks.c" selected="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="24" y="357" useTextEdit="1" openedFrom="D:/Users/jlmeyers3/Documents/EE444 Labs/Project/EE444-Project/main.c" useBinaryEdit="0" left="0" path="../../../../AppData/Local/Rowley Associates Limited/CrossWorks for MSP430/v3/packages/include/msp430.h" selected="0" top="341" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="37" y="2107" useTextEdit="1" openedFrom="D:/Users/jlmeyers3/Documents/EE444 Labs/Project/EE444-Project/transceiver.c" useBinaryEdit="0" left="0" path="../../../../AppData/Local/Rowley Associates Limited/CrossWorks for MSP430/v3/packages/include/msp430f5438a.h" selected="0" top="2105" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="26" y="59" useTextEdit="1" openedFrom="D:/Users/jlmeyers3/Documents/EE444 Labs/Project/EE444-Project/motionsensor.c" useBinaryEdit="0" left="0" path="uart.c" selected="0" top="24" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="15" y="10" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="uart.h" selected="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="39" useTextEdit="1" openedFrom="D:/Users/jlmeyers3/Documents/EE444 Labs/Project/EE444-Project/main.c" useBinaryEdit="0" left="0" path="motionsensor.c" selected="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="7" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="motionsensor.h" selected="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="8" y="168" useTextEdit="1" openedFrom="D:/Users/jlmeyers3/Documents/EE444 Labs/Project/EE444-Project/transceiver.c" useBinaryEdit="0" left="0" path="C:/Program Files (x86)/Rowley Associates Limited/CrossWorks for MSP430 3.2/include/stdint.h" selected="0" top="145" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="18" y="17" useTextEdit="1" openedFrom="D:/Users/hklebesadel2/EE444-Project/transceiver.c" useBinaryEdit="0" left="0" path="uart.c" selected="0" top="42" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="22" useTextEdit="1" openedFrom="D:/Users/hklebesadel2/EE444-Project/uart.c" useBinaryEdit="0" left="0" path="uart.h" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="40" useTextEdit="1" openedFrom="D:/Users/jlmeyers3/Documents/EE444 Labs/Project/EE444-Project/main.c" useBinaryEdit="0" left="0" path="motionsensor.c" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="5" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="motionsensor.h" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="40" y="2079" useTextEdit="1" openedFrom="D:/Users/hklebesadel2/EE444-Project/transceiver.c" useBinaryEdit="0" left="0" path="../AppData/Local/Rowley Associates Limited/CrossWorks for MSP430/v3/packages/include/msp430f5438a.h" selected="1" top="2023" codecName="Default"/>
  </Files>
  <MSP430CrossStudioWindow activeProject="Motion_Sensor_Alarm" fileDialogDefaultFilter="*.c" autoConnectTarget="MSP-FET/MSP-FET430UIF/eZ-FET" buildConfiguration="MSP430 Debug" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="D:/Users/jlmeyers3/Documents/EE444 Labs/Project/EE444-Project" debugSearchPath="" autoConnectCapabilities="528255"/>
 </session>

@@ -6,7 +6,6 @@
 #include "transceiver.h"
 
 extern alarm_state;
-extern time_t * time;
 
 extern currday;
 extern currdow;
@@ -19,9 +18,6 @@ int intcurrdow;
 int intcurrhour;
 int intcurrmin;
 int intcurrsec;
-
-//FIXME delete these
-int testvar1;
 
 uint8_t data_array[4];
 void setupTransceiver(void) {
@@ -185,6 +181,3 @@ void powerupDelay(void) {
   int x = 0;
   for (x; x<18000; x++);
 }
-
-  //18000 power up delay
-  //2000 delay time

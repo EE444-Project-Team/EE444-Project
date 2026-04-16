@@ -17,11 +17,6 @@ extern intcurrhour;
 extern intcurrmin;
 extern intcurrsec;
 
-
-//FIXME delete these
-uint8_t testvar;
-uint8_t breakpoint;
-
 void init_uart(void) {
   // Set up UART
   P5SEL |= BIT6 | BIT7;
