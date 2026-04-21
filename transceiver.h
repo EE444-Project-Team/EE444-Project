@@ -1,5 +1,5 @@
-#ifndef  TRANSCIEVER__H
-#define  TRANSCIEVER__H
+#ifndef  TRANSCEIVER__H
+#define  TRANSCEIVER__H
 #include <stdint.h>
 void setupTransceiver(void);
 void Received_Data_ISR(void);
@@ -9,4 +9,4 @@ uint8_t sendPayload(uint8_t cmd);
 void delay(void);
 void powerupDelay(void);
 
-#endif // TRANSCIEVER__H
+#endif // TRANSCEIVER__H
